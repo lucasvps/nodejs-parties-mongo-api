@@ -1,0 +1,99 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "name": "NOVASSO",
+    "description": "hahahaha do serviço",
+    "price": 1337,
+    "image": "https://image-url-here.png"
+}
+
+###
+
+// GET ALL
+GET http://localhost:3000/api/services
+
+###
+
+GET http://localhost:3000/api/services/64a3e9cb89b895578647b332
+
+###
+
+DELETE http://localhost:3000/api/services/64a3f18f3a185a821304440a
+
+###
+
+PUT http://localhost:3000/api/services/64a3ea66b0d869f3a4716c0f
+Content-Type: application/json
+
+{
+    "name": "Nome ATUALIZADOS 2.0",
+    "description": "Descrição ATUALIZADOS 3.0",
+    "price": 123,
+    "image": "https://image-url-here-hehehehe.png"
+}
+
+
+###
+
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Titulo da festa 2",
+    "description": "hahahaha toda a descrição da festa 2",
+    "author": "Eu mesmo",
+    "budget": 3300,
+    "image": "https://image-url-here.png",
+    "services": [
+        {
+            "name": "Criei um serviço 2",
+            "description": "hahahaha do serviço2",
+            "price": 3000,
+            "image": "https://image-url-here.png2"
+        },
+        {
+            "name": "Criei um serviço",
+            "description": "hahahaha do serviço",
+            "price": 300,
+            "image": "https://image-url-here.png"
+        }
+    ]
+}
+
+###
+
+// GET ALL
+GET http://localhost:3000/api/parties
+
+###
+
+GET http://localhost:3000/api/parties/64a3eb703a399fc4e1e93c0b
+
+###
+
+DELETE http://localhost:3000/api/parties/64a3ea11b0d869f3a4716c0c
+
+
+###
+
+PUT http://localhost:3000/api/parties/64a3eb703a399fc4e1e93c0b
+Content-Type: application/json
+
+{
+    "title": "Festão rapazeadaaaaa",
+    "description": "VAI SER FODA",
+    "author": "Vieira",
+    "budget": 3300,
+    "image": "https://image-url-here.png",
+    "services": [
+        {
+            "name": "Servicin",
+            "description": "servicin do serviço",
+            "price": 3200,
+            "image": "https://image-url-here.png"
+        }
+    ]
+}
+
+
